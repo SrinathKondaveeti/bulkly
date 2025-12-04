@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+/* Use a minimal reset: preserve default element margins (helps headings/header),
+   but apply a safe box-sizing reset for predictable layout. */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 0px 10px 0px;
+    background-color: #f8f9fa;
+}

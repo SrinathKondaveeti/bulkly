@@ -1,10 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Field, form, maxLength, required } from '@angular/forms/signals';
 
 @Component({
   selector: 'bulkly-contact-form',
   imports: [Field],
-  templateUrl: './contact-form.html'
+  templateUrl: './contact-form.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactForm {
 

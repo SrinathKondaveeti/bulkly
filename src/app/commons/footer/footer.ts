@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'bulkly-footer',
   imports: [],
-  templateUrl: './footer.html'
+  templateUrl: './footer.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Footer {
 

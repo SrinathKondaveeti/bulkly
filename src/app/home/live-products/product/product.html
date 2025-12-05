@@ -1,0 +1,55 @@
+<article
+    class="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:shadow-lg">
+    <!-- Image -->
+    <div class="aspect-[4/3] w-full overflow-hidden rounded-xl group">
+        <img src="https://images.unsplash.com/photo-1593069431672-f903a33c286f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGZ1cm5pdHVyZXxlbnwxfHx8fDE3NjE1MDI4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="SmartAir Pro 5000 Air Purifier" class="h-full w-full object-cover transform transition duration-700 ease-out 
+           group-hover:scale-105 group-hover:brightness-110" />
+    </div>
+
+    <!-- Content -->
+    <div class="flex flex-1 flex-col p-5">
+        <h3 class="text-sm font-semibold text-slate-900 md:text-base">
+            SmartAir Pro 5000 Air Purifier
+        </h3>
+        <p class="mt-1 text-xs text-slate-500 md:text-sm">
+            Medical-grade HEPA filtration with AI-powered air quality monitoring
+        </p>
+
+        <!-- Orders / progress -->
+        <div class="mt-4 space-y-2 text-xs text-slate-600">
+            <div class="flex items-center justify-between">
+                <span>Orders</span>
+                <span>324/1000</span>
+            </div>
+            <div class="h-1.5 w-full rounded-full bg-slate-100">
+                @if(percent()) {
+                    <div [class]="`h-1.5 rounded-full bg-slate-900 w-[${percent()}%]`"></div>
+                }
+            </div>
+            <div class="flex items-center justify-between text-[11px] md:text-xs">
+                <span>-19 days left</span>
+                <span>32% funded</span>
+            </div>
+        </div>
+
+        <!-- Price -->
+        <div class="mt-4 text-sm md:text-base">
+            <span class="font-semibold text-slate-900">₹12,999</span>
+            <span class="ml-2 text-xs text-slate-400 line-through">₹12,999</span>
+        </div>
+
+        <!-- Actions -->
+        <div class="mt-4 flex items-center gap-3">
+            <button
+                class="flex-1 rounded-full bg-slate-900 py-2.5 text-center text-xs font-semibold text-white shadow-sm hover:bg-black md:text-sm">
+                View Details
+            </button>
+            <button
+                class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50"
+                aria-label="Share product">
+                &#128257;
+            </button>
+        </div>
+    </div>
+</article>

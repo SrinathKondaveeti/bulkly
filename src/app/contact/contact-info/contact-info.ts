@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'bulkly-contact-info',
   imports: [],
-  templateUrl: './contact-info.html'
+  templateUrl: './contact-info.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactInfo {
 

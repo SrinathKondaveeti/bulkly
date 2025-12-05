@@ -1,1 +1,21 @@
-<p>home works!</p>
+<bulkly-sub-header />
+
+@defer (on viewport) {
+<bulkly-live-products />
+}@placeholder {
+<div>Live Products loading...</div>
+}
+
+@defer (on viewport) {
+<bulkly-coming-soon />
+}@placeholder {
+<div>New Products loading...</div>
+}
+
+@defer (on viewport) {
+<div>
+    <bulkly-work />
+</div>
+}@placeholder {
+<div>Loading...</div>
+}

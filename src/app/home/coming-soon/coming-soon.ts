@@ -1,11 +1,12 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'bulkly-about-us',
+  selector: 'bulkly-coming-soon',
   imports: [],
-  templateUrl: './about-us.html',
+  templateUrl: './coming-soon.html',
+  styleUrl: './coming-soon.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AboutUs {
+export class ComingSoon {
 
 }

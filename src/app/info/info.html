@@ -1,0 +1,419 @@
+<section class="bg-gradient-to-b from-sky-50 to-white">
+    <!-- Top heading -->
+    <div class="mx-auto max-w-5xl px-4 pt-10 pb-8 text-center">
+        <p class="text-sm font-medium text-slate-800">Our Commitments</p>
+        <h2 class="mt-3 text-lg font-semibold leading-snug text-slate-800 md:text-2xl md:leading-snug">
+            At Bulkly, we're redefining trust in e-commerce through transparency, quality,
+            and fair practices.
+        </h2>
+    </div>
+
+    <!-- Tabs row -->
+    <div class="border-t border-b border-slate-200 bg-white">
+        <div class="mx-auto max-w-5xl">
+            <div class="flex gap-6 overflow-x-auto px-4 py-3 text-xs font-medium text-slate-700
+                   sm:text-sm md:justify-center md:overflow-visible">
+                <button (click)="scrollTo('quality_verified')"
+                    [class]="`whitespace-nowrap pb-2 text-slate-600 hover:text-blue-600 ${sectionIdLinked() === 'quality_verified' ? 'border-b-2 border-slate-900 text-slate-900' : '' }`">
+                    Quality Verified
+                </button>
+                <button (click)="scrollTo('guaranteed')"
+                    [class]="`whitespace-nowrap pb-2 text-slate-600 hover:text-blue-600 ${sectionIdLinked() === 'guaranteed' ? 'border-b-2 border-slate-900 text-slate-900' : '' }`">
+                    100% Guaranteed
+                </button>
+                <button (click)="scrollTo('fair_pricing')"
+                    [class]="`whitespace-nowrap pb-2 text-slate-600 hover:text-blue-600 ${sectionIdLinked() === 'fair_pricing' ? 'border-b-2 border-slate-900 text-slate-900' : ''}`">
+                    Fair Pricing
+                </button>
+                <button (click)="scrollTo('direct_from_makers')"
+                    [class]="`whitespace-nowrap pb-2 text-slate-600 hover:text-blue-600 ${sectionIdLinked() === 'direct_from_makers' ? 'border-b-2 border-slate-900 text-slate-900' : ''}`">
+                    Direct from Makers
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT WRAPPER -->
+    <div class="bg-slate-50">
+        <div class="mx-auto max-w-5xl px-4 py-10 space-y-12">
+            <!-- ================= QUALITY VERIFIED ================= -->
+            <section id="quality_verified" class="space-y-6">
+                <!-- Hero row -->
+                <div class="flex items-start gap-4">
+                    <div class="mt-1 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full
+                     bg-blue-600 text-2xl text-white md:h-16 md:w-16">
+                        ✓
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-slate-900 md:text-lg">
+                            Quality Verified
+                        </h3>
+                        <p class="mt-2 text-sm text-slate-600 md:text-base">
+                            Rigorous testing and validation before every listing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QA process card -->
+                <div class="rounded-3xl border border-slate-200 bg-white px-5 py-6 shadow-sm md:px-8 md:py-7">
+                    <h4 class="text-sm font-semibold text-slate-900 md:text-base">
+                        Our Quality Assurance Process
+                    </h4>
+
+                    <div class="mt-5 space-y-6 text-sm text-slate-700">
+                        <!-- Step 1 -->
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full
+                       bg-blue-100 text-xs font-semibold text-blue-700 md:h-10 md:w-10 md:text-sm">
+                                1
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Vendor Validation</p>
+                                <p class="mt-1 leading-relaxed">
+                                    Every manufacturer undergoes a comprehensive background check including
+                                    business licenses, certifications (ISO 9001, ISO 14001), facility inspections,
+                                    and financial stability assessment. We verify production capacity, quality
+                                    control systems, and compliance with labor laws.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full
+                       bg-blue-100 text-xs font-semibold text-blue-700 md:h-10 md:w-10 md:text-sm">
+                                2
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Product Testing</p>
+                                <p class="mt-1 leading-relaxed">
+                                    Our in-house team conducts rigorous testing on sample products – functionality,
+                                    durability, safety checks, and material verification. We also engage
+                                    NABL-accredited third-party labs for independent validation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full
+                       bg-blue-100 text-xs font-semibold text-blue-700 md:h-10 md:w-10 md:text-sm">
+                                3
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Certification Requirements</p>
+                                <p class="mt-1 leading-relaxed">
+                                    Products must meet strict certification standards based on category.
+                                    All documents are verified directly with issuing authorities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full
+                       bg-blue-100 text-xs font-semibold text-blue-700 md:h-10 md:w-10 md:text-sm">
+                                4
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Continuous Monitoring</p>
+                                <p class="mt-1 leading-relaxed">
+                                    Quality doesn’t stop at approval. We track return rates, perform surprise
+                                    audits, and review customer feedback. Vendors with poor performance are
+                                    reviewed or delisted.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Three feature cards -->
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                    <div class="rounded-3xl border border-slate-200 bg-white px-5 py-5 text-center shadow-sm">
+                        <div
+                            class="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                            🏅
+                        </div>
+                        <h5 class="text-sm font-semibold text-slate-900">
+                            Third-Party Testing
+                        </h5>
+                        <p class="mt-2 text-xs text-slate-600 md:text-sm">
+                            All products tested by NABL-accredited labs.
+                        </p>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-white px-5 py-5 text-center shadow-sm">
+                        <div
+                            class="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                            📄
+                        </div>
+                        <h5 class="text-sm font-semibold text-slate-900">
+                            Complete Documentation
+                        </h5>
+                        <p class="mt-2 text-xs text-slate-600 md:text-sm">
+                            Test reports & certificates available for every product.
+                        </p>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200 bg-white px-5 py-5 text-center shadow-sm">
+                        <div
+                            class="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                            📦
+                        </div>
+                        <h5 class="text-sm font-semibold text-slate-900">
+                            Batch Quality Logs
+                        </h5>
+                        <p class="mt-2 text-xs text-slate-600 md:text-sm">
+                            Every production batch is tracked with quality records.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= 100% GUARANTEED ================= -->
+            <section id="guaranteed" class="space-y-6">
+                <!-- Hero row -->
+                <div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full
+                     bg-blue-600 text-2xl text-white md:h-16 md:w-16">
+                            🛡️
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-slate-900 md:text-lg">
+                                100% Guaranteed
+                            </h3>
+                            <p class="mt-2 text-sm text-slate-600 md:text-base">
+                                Your satisfaction and trust are our top priority.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guarantee details -->
+                <div class="rounded-3xl border border-slate-200 bg-white px-5 py-6 text-sm shadow-sm md:px-8 md:py-7">
+                    <h4 class="font-semibold text-slate-900">What Our Guarantee Covers</h4>
+
+                    <div class="mt-4 space-y-3">
+                        <p class="font-semibold text-slate-900">
+                            100% Replacement Guarantee
+                        </p>
+                        <p class="leading-relaxed text-slate-700">
+                            If you receive a product with any manufacturing defect, damage during transit, or
+                            quality issue, we replace it at absolutely no cost to you.
+                        </p>
+
+                        <ul class="mt-2 space-y-1 text-slate-700">
+                            <li>✅ Manufacturing defects – lifetime coverage</li>
+                            <li>✅ Transit damage – full protection</li>
+                            <li>✅ Quality mismatch – 30–60 day returns (product dependent)</li>
+                            <li>✅ Wrong item delivered – immediate replacement</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6 space-y-3">
+                        <p class="font-semibold text-slate-900">
+                            Hassle-Free Process
+                        </p>
+                        <ol class="mt-2 space-y-2 text-slate-700">
+                            <li>1. Raise a request through your profile or contact support.</li>
+                            <li>2. Provide photos / description (takes ~2 minutes).</li>
+                            <li>3. We review and approve within 24 hours.</li>
+                            <li>4. Replacement shipped within 48 hours.</li>
+                        </ol>
+                    </div>
+
+                    <div class="mt-6">
+                        <p class="font-semibold text-slate-900">Quality Commitment</p>
+                        <p class="mt-2 leading-relaxed text-slate-700">
+                            We stand behind every product on our platform. Our return rate is consistently
+                            below 2%, compared to an industry average of 15–20%.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= FAIR PRICING ================= -->
+            <section id="fair_pricing" class="space-y-6">
+                <!-- Hero row -->
+                <div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full
+                     bg-blue-600 text-2xl text-white md:h-16 md:w-16">
+                            📈
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-slate-900 md:text-lg">
+                                Fair Pricing
+                            </h3>
+                            <p class="mt-2 text-sm text-slate-600 md:text-base">
+                                Collective buying power for better prices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white px-5 py-6 text-sm shadow-sm md:px-8 md:py-7">
+                    <h4 class="font-semibold text-slate-900">
+                        How We Ensure Fair Prices
+                    </h4>
+
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <p class="font-semibold text-slate-900">Bulk Purchase Model</p>
+                            <p class="mt-1 leading-relaxed text-slate-700">
+                                Traditional retail involves multiple intermediaries, each adding markup.
+                                We connect you directly with manufacturers and use collective bulk ordering
+                                to unlock pricing usually reserved for large retailers.
+                            </p>
+                        </div>
+
+                        <!-- Price breakdown "table" -->
+                        <div class="rounded-2xl bg-sky-50 px-4 py-4 text-xs text-slate-800 sm:text-sm">
+                            <p class="font-semibold">Price Breakdown Example</p>
+
+                            <div class="mt-3 grid gap-4 md:grid-cols-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900">Traditional Retail Price:</p>
+                                    <ul class="mt-1 space-y-1">
+                                        <li>- Manufacturer cost</li>
+                                        <li>- Distributor / wholesaler / retailer markups (150%)</li>
+                                        <li>- Logistics & overhead</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-slate-900">Bulkly Direct Price:</p>
+                                    <ul class="mt-1 space-y-1">
+                                        <li>- Manufacturer cost</li>
+                                        <li>- Platform fee (fair, transparent)</li>
+                                        <li>- Logistics & quality assurance</li>
+                                    </ul>
+                                    <p class="mt-2 font-semibold text-emerald-600">
+                                        Your savings: ~40–50% vs typical retail
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <p class="font-semibold text-slate-900">Transparent Pricing</p>
+                            <p class="leading-relaxed text-slate-700">
+                                We show complete price breakdowns including manufacturing cost, platform fee,
+                                logistics, and QA. No hidden charges.
+                            </p>
+
+                            <p class="font-semibold text-slate-900">Share & Save More</p>
+                            <ul class="mt-1 space-y-1 text-slate-700">
+                                <li>📈 50% orders reached: +5% extra discount</li>
+                                <li>📈 75% orders reached: +10% extra discount</li>
+                                <li>📈 100% orders reached: +15% extra discount</li>
+                            </ul>
+
+                            <p class="font-semibold text-slate-900">Price Protection</p>
+                            <p class="leading-relaxed text-slate-700">
+                                Once you place an order, your price is locked. If you find the same product
+                                cheaper elsewhere with comparable standards, we’ll match it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= DIRECT FROM MAKERS ================= -->
+            <section id="direct_from_makers" class="space-y-6">
+                <!-- Hero row -->
+                <div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full
+                     bg-blue-600 text-2xl text-white md:h-16 md:w-16">
+                            👤
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-slate-900 md:text-lg">
+                                Direct from Makers
+                            </h3>
+                            <p class="mt-2 text-sm text-slate-600 md:text-base">
+                                Supporting manufacturers, empowering customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white px-5 py-6 text-sm shadow-sm md:px-8 md:py-7">
+                    <h4 class="font-semibold text-slate-900">Why Direct Matters</h4>
+
+                    <!-- supply chain comparison -->
+                    <div
+                        class="mt-4 grid gap-4 rounded-2xl bg-sky-50 px-4 py-4 text-xs text-slate-800 sm:text-sm md:grid-cols-2">
+                        <div>
+                            <p class="font-semibold text-red-600">Traditional Supply Chain</p>
+                            <ol class="mt-1 space-y-1">
+                                <li>1. Manufacturer</li>
+                                <li>2. Wholesaler</li>
+                                <li>3. Distributor</li>
+                                <li>4. Retailer</li>
+                                <li>5. Customer (pays 100%)</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-emerald-600">Bulkly Direct Model</p>
+                            <ol class="mt-1 space-y-1">
+                                <li>1. Manufacturer</li>
+                                <li>2. Bulkly (platform, logistics, QA)</li>
+                                <li>3. Customer</li>
+                            </ol>
+                            <p class="mt-2 font-semibold text-emerald-600">
+                                Everyone wins: better prices, fair compensation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 space-y-4 text-slate-700">
+                        <div>
+                            <p class="font-semibold text-slate-900">Know Your Maker</p>
+                            <p class="mt-1 leading-relaxed">
+                                Each product page shows detailed manufacturer info, certifications, and quality
+                                practices so you can make informed decisions.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="font-semibold text-slate-900">
+                                Supporting Local Manufacturing
+                            </p>
+                            <p class="mt-1 leading-relaxed">
+                                Many of our vendors are small to mid-sized manufacturers. By handling logistics,
+                                QA, and customer service, we help them compete fairly with large brands.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="font-semibold text-slate-900">Sustainable & Ethical</p>
+                            <ul class="mt-1 space-y-1">
+                                <li>✅ Fair wages and safe working conditions</li>
+                                <li>✅ Environmental responsibility & waste reduction</li>
+                                <li>✅ Sustainable sourcing of materials</li>
+                                <li>✅ Local employment & community development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA panel -->
+                <div
+                    class="mt-6 rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-500 px-6 py-8 text-center text-white md:px-10 md:py-10">
+                    <p class="text-xs font-semibold uppercase tracking-wide md:text-sm">
+                        Experience the Bulkly Difference
+                    </p>
+                    <p class="mt-3 text-sm font-medium md:text-lg">
+                        Join thousands of customers who trust Bulkly for quality, transparency, and value.
+                    </p>
+                    <button
+                        class="mt-6 rounded-full bg-white px-6 py-2 text-sm font-semibold text-blue-700 shadow-sm hover:bg-slate-50 md:px-8">
+                        Start Shopping
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

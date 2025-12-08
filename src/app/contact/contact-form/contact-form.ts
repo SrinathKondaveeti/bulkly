@@ -23,8 +23,9 @@ export class ContactForm {
       maxLength(path.subject, 20, { message: requiredMessage })
   })
 
-  sendMessage(event: any) {
+  sendMessage(event: Event) {
     event.preventDefault();
+    this.contactForm().markAsTouched();
     console.log(this.contactForm().value());
   }
 

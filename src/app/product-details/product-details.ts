@@ -5,7 +5,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   selector: 'bulkly-product-details',
   imports: [RouterLink, RouterOutlet, RouterLinkActive],
   templateUrl: './product-details.html',
-  styleUrl: './product-details.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductDetails {

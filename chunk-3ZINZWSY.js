@@ -1,0 +1,1 @@
+import{Fa as i,bb as c,cb as a,nb as n}from"./chunk-OLQZNNB4.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=i({type:t,selectors:[["bulkly-certificates"]],decls:2,vars:0,template:function(e,r){e&1&&(c(0,"p"),n(1,"certificates works!"),a())},encapsulation:2,changeDetection:0})};export{s as Certificates};

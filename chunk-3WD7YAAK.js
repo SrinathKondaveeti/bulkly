@@ -1,0 +1,1 @@
+var l=class{static allProductsUrl="product/allProducts";static emailAvailableUrl="user/isEmailAvailable";static sendEmailVerificationCodeUrl="user/sendEmailVerificationCode";static registerUrl="user/register"};export{l as a};

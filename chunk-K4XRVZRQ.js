@@ -1,0 +1,1 @@
+import{Ha as i,fb as c,gb as a,vb as n}from"./chunk-UONODV74.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=i({type:t,selectors:[["bulkly-certificates"]],decls:2,vars:0,template:function(e,r){e&1&&(c(0,"p"),n(1,"certificates works!"),a())},encapsulation:2,changeDetection:0})};export{s as Certificates};

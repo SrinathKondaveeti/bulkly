@@ -1,1 +1,0 @@
-import{Ha as i,eb as c,fb as a,qb as n}from"./chunk-PSAS3MOM.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=i({type:t,selectors:[["bulkly-certificates"]],decls:2,vars:0,template:function(e,r){e&1&&(c(0,"p"),n(1,"certificates works!"),a())},encapsulation:2,changeDetection:0})};export{s as Certificates};

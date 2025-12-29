@@ -1,0 +1,1 @@
+import{c as i}from"./chunk-AXQW6MGF.js";import"./chunk-6RRU44RT.js";import{Ha as n,eb as o}from"./chunk-UONODV74.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["bulkly-login"]],decls:1,vars:0,template:function(e,l){e&1&&o(0,"router-outlet")},dependencies:[i],encapsulation:2,changeDetection:0})};export{a as Login};
